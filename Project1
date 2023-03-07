@@ -1,0 +1,41 @@
+# patika-algorithm-projects
+
+Proje 1
+[22,27,16,2,18,6] -> Insertion Sort
+
+- Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+
+1.yineleme: 22,27 karşılaştırılır. 22<27 olduğu için sıralama değişmez.
+Dizimiz aynı şekilde kalır: [22,27,16,2,18,6]
+
+2.yineleme: 27,16 karşılaştırılır. 16<27 olduğu için ikisinin yerini değiştiriyoruz.
+Dizimiz bu hali alır: [22,16,27,2,18,6]
+Fakat 16'dan önceki eleman ile de kıyaslama yapmamız gerekiyor. 22,16 karşılaştırılır. 16<22 olduğu için ikisinin yerini değiştiriyoruz.
+Dizimiz bu hali alır: [16,22,27,2,18,6]
+
+3.yineleme: 27,2 karşılaştırılır. 2<27 olduğu için ikisinin yerini değiştiriyoruz.
+Dizimiz bu hali alır: [22,16,2,27,18,6]
+Fakat 2'den önceki elemanlar ile aynı şekilde kıyaslama yapmaya devam etmemiz gerekiyor. Diğerlerinden küçük olduğu için en solda yerini alır.
+Dizimiz bu hali alır: [2,16,22,27,18,6]
+
+4.yineleme: 18,27 karşılaştırılır. 18<27 olduğu için ikisinin yerini değiştiriyoruz ve 18 solundaki elemandan daha büyük olana kadar iterasyona devam ederiz.
+Dizimiz bu hali alır: [2,16,18,22,27,6]
+
+5.yineleme: 6,27 karşılaştırılır. 6<27 olduğu için ikisinin yerini değiştiriyoruz ve aynı önceki adımlardaki gibi
+solundaki elemandan daha büyük olana kadar iterasyona devam ederiz.
+Dizimiz bu hali alır: [2,6,16,18,22,27]
+
+- Big-O gösterimini yazınız.
+
+O(n^2)
+
+- Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+
+Average case'dir çünkü 18 sayısı dizinin ortasında bulunmaktadır. 
+
+
+[7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+[2,3,5,8,7,9,4,15,6]
+[2,3,4,8,7,9,5,15,6]
+[2,3,4,5,7,9,8,15,6]
+[2,3,4,5,6,9,8,15,7]
